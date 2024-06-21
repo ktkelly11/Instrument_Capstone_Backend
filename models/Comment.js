@@ -1,6 +1,6 @@
-const { Schema, model } = require('../config/db-connection');
+const { Schema, model } = require("../config/db-connection");
 
-const userSchema = Schema({
+const commentsSchema = Schema({
   email: {
     type: String,
     required: true,
@@ -14,4 +14,4 @@ const userSchema = Schema({
   },
 });
 
-module.exports = model('User', userSchema);
+module.exports = model("Comments", commentsSchema);
