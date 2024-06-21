@@ -1,12 +1,13 @@
 const { Schema, model } = require("../config/db-connection");
 
 const commentsSchema = Schema({
-  email: {
+  name: {
     type: String,
     required: true,
     unique: true,
   },
-  password: {
+
+  email: {
     type: String,
     required: true,
     unique: true,
