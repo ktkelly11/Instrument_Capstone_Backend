@@ -1,4 +1,4 @@
-const Comments = require("../models/Comment");
+const Comment = require("../models/Comment");
 
 module.exports = {
   createComment,
@@ -6,7 +6,9 @@ module.exports = {
 
 async function createComment(req, res) {
   try {
-    const comments = await Comments.create(req.body);
+    const comments = new Comment(req.body);
+
+    await comments.save();
 
     res.status(200).json(comments);
   } catch (err) {
