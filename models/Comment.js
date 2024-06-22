@@ -6,12 +6,23 @@ const commentsSchema = Schema({
     required: true,
     unique: true,
   },
-
-  email: {
+  title: {
     type: String,
     required: true,
-    unique: true,
-    min: 5,
+  },
+  comment: [
+    {
+      content: String,
+      required: true,
+    },
+  ],
+  city: {
+    type: String,
+    required: true,
+  },
+  state: {
+    type: String,
+    required: true,
   },
 });
 
