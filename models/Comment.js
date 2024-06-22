@@ -1,6 +1,11 @@
 const { Schema, model } = require("../config/db-connection");
 
 const commentsSchema = Schema({
+  postNum: {
+    type: Number,
+    required: true,
+    unique: true,
+  },
   name: {
     type: String,
     required: true,
@@ -9,13 +14,10 @@ const commentsSchema = Schema({
     type: String,
     required: true,
   },
-  comment: [
-    {
-      content: String,
-      // app crashed
-      // required: true,
-    },
-  ],
+  comment: {
+    content: String,
+    required: true,
+  },
   city: {
     type: String,
     required: true,
