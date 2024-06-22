@@ -22,14 +22,6 @@ const comments = [
     city: "Lewiston",
     state: "Idaho",
   },
-  {
-    postNum: "8611160436",
-    name: "Margaret",
-    title: "",
-    comment: "",
-    city: "Fargo",
-    state: "North Dakota",
-  },
 ];
 
 async function seed() {
