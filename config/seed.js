@@ -11,3 +11,19 @@ const comments = [
       "As a former teacher I have seen first hand how grateful students are to receive these secondhand musical instruments.  It means so much when they can take lessons and learn a new skill.",
   },
 ];
+
+async function seed() {
+  try {
+    await Comment.deletMany({});
+
+    const createdComments = await Comment.creat(comments);
+
+    console.log("Comments", createdComments);
+
+    await mongoose.connection.close();
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+seed();
