@@ -24,8 +24,14 @@ const donationsSchema = Schema({
     type: String,
     // required: true,
   },
+  instrument: {
+    type: String,
+    required: true,
+  },
+  instrumentNum: {
+    type: Number,
+    required: true,
+  },
 });
-
-// App keeps crashing when I have required = true, which I have used before.  Unsure why that is happening...
 
 module.exports = model("Donations", donationsSchema);
