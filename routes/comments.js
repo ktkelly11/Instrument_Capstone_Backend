@@ -5,4 +5,10 @@ const router = Router();
 
 router.post("/", commentsCtrl.createComment);
 
+router.get("/", commentsCtrl.getComment);
+
+router.put("/:id", commentsCtrl.updateComment);
+
+router.delete("/:id", commentsCtrl.deleteComment);
+
 module.exports = router;
