@@ -10,7 +10,7 @@ const commentsSchema = Schema({
     // required: true,
   },
   comment: {
-    content: String,
+    type: String,
     // required: true,
   },
   city: {
