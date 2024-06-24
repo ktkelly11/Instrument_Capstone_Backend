@@ -15,7 +15,7 @@ async function createComment(req, res) {
 
     res.status(200).json(comments);
   } catch (err) {
-    res.status(400).json("Error");
+    res.status(400).json(err);
   }
 }
 
