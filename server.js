@@ -8,6 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 // Requiring example router
 const commentsRouter = require("./routes/comments.js");
+const donationsRouter = require("./routes/donations.js");
 
 // Configuring the server to accept and parse JSON data.
 app.use(express.json());
@@ -20,6 +21,7 @@ app.use((req, res, next) => {
 
 // Connecting the router to the server
 app.use("/comments", commentsRouter);
+app.use("/donations", donationsRouter);
 
 // Error Handling Middlware
 app.use((err, req, res, next) => {
