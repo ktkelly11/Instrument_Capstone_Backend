@@ -10,6 +10,10 @@ const PORT = process.env.PORT || 8000;
 const commentsRouter = require("./routes/comments.js");
 const donationsRouter = require("./routes/donations.js");
 
+const cors = require("cors");
+
+app.use(cors());
+
 // Configuring the server to accept and parse JSON data.
 app.use(express.json());
 
