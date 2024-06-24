@@ -5,7 +5,6 @@ const Comment = require("../models/Comment.js");
 
 const comments = [
   {
-    postNum: "9983166917",
     name: "Olive",
     title: "The benefit of this program is so great",
     comment:
@@ -14,7 +13,6 @@ const comments = [
     state: "North Dakota",
   },
   {
-    postNum: "1384209891",
     name: "Ray",
     title: "So many happy students",
     comment:
@@ -23,7 +21,6 @@ const comments = [
     state: "Idaho",
   },
   {
-    postNum: "7452122410",
     name: "Delores",
     title: "Lovely!",
     comment:
@@ -32,7 +29,6 @@ const comments = [
     state: "North Dakota",
   },
   {
-    postNum: "1528866312",
     name: "Jack",
     title: "Music is so important",
     comment:
@@ -41,7 +37,6 @@ const comments = [
     state: "North Dakota",
   },
   {
-    postNum: "8611160436",
     name: "Margaret",
     title: "A love of music is within all of us",
     comment:
@@ -50,7 +45,6 @@ const comments = [
     state: "North Dakota",
   },
   {
-    postNum: "6403093665",
     name: "Jeff",
     title: "Music is so beautiful",
     comment:
@@ -59,7 +53,6 @@ const comments = [
     state: "North Dakota",
   },
   {
-    postNum: "1921704411",
     name: "Zach",
     title: "Teacher looking to get involved",
     comment:
@@ -68,7 +61,6 @@ const comments = [
     state: "Ohio",
   },
   {
-    postNum: "9524560283",
     name: "Maggie",
     title: "Music Therapist",
     comment:
@@ -77,7 +69,6 @@ const comments = [
     state: "Vermont",
   },
   {
-    postNum: "7938379999",
     name: "Katie",
     title: "Music is everywhere",
     comment:
@@ -86,7 +77,6 @@ const comments = [
     state: "Ohio",
   },
   {
-    postNum: "1130364755",
     name: "Harper",
     title: "Please donate!",
     comment:
