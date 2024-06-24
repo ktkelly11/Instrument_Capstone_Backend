@@ -29,7 +29,7 @@ app.use("/donations", donationsRouter);
 
 // Error Handling Middlware
 app.use((err, req, res, next) => {
-  res.status(500).send("Something went wrong.");
+  res.status(500).send(err);
 });
 
 // Calling the listen function telling the server to listen on port 3000
