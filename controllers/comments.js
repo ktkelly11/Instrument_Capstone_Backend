@@ -47,9 +47,9 @@ async function updateComment(req, res) {
 
 async function deleteComment(req, res) {
   try {
-    await Comment.findByIdAndDelete(req.params.id);
+    const deletedComment = await Comment.findByIdAndDelete(req.params.id);
 
-    res.status(200).json({ message: "Successfully Deleted Comment" });
+    res.status(200).json(deletedComment);
   } catch (err) {
     res.status(400).send(err);
   }
